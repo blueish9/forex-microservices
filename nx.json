@@ -34,7 +34,9 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/forex-microservices-e2e/**/*"]
+      "exclude": [
+        "apps/api-gateway-e2e/**/*"
+      ]
     }
   ],
   "nxCloudAccessToken": "MTkyZTg3NGYtNTdhYS00ZmQ4LTkzODYtNDNlNzc2OTc3ZDk3fHJlYWQtd3JpdGU="

@@ -1,7 +1,7 @@
 {
-  "name": "forex-microservices",
+  "name": "api-gateway",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/forex-microservices/src",
+  "sourceRoot": "apps/api-gateway/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -9,14 +9,14 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "forex-microservices:build"
+        "buildTarget": "api-gateway:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "forex-microservices:build:development"
+          "buildTarget": "api-gateway:build:development"
         },
         "production": {
-          "buildTarget": "forex-microservices:build:production"
+          "buildTarget": "api-gateway:build:production"
         }
       }
     }
