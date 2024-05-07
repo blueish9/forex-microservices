@@ -1,0 +1,24 @@
+{
+  "name": "forex-microservices",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/forex-microservices/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "forex-microservices:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "forex-microservices:build:development"
+        },
+        "production": {
+          "buildTarget": "forex-microservices:build:production"
+        }
+      }
+    }
+  }
+}
