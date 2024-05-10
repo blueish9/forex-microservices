@@ -4,7 +4,7 @@ import { IsInt, IsString } from 'class-validator';
 export class TransferDto {
   @ApiProperty()
   @IsInt()
-  amount: string;
+  amount: number;
 
   @ApiProperty()
   @IsString()
