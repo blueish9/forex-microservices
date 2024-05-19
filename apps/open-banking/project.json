@@ -1,0 +1,24 @@
+{
+  "name": "open-banking",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/open-banking/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "open-banking:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "open-banking:build:development"
+        },
+        "production": {
+          "buildTarget": "open-banking:build:production"
+        }
+      }
+    }
+  }
+}
